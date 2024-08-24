@@ -4,6 +4,14 @@ on:
   push:
     paths:
       - hospital-management/api-gateway/**
+    branches:
+      - '**'
+    tags:
+      - '**'
+  pull_request:
+    branches:
+      - main
+
 
 jobs:
   pre-commit-scans:
